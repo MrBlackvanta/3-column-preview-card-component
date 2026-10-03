@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @source not "../../*.md";
+@source not "./icon.svg";
 
 @theme {
   --font-sans: var(--font-lexend-deca), ui-sans-serif, system-ui, sans-serif;
@@ -18,10 +19,25 @@
   --color-luxury: #004140;
 }
 
+@utility v-focus-ring {
+  &:focus-visible {
+    outline: 3px solid var(--focus-ring, var(--color-muted));
+    outline-offset: 3px;
+  }
+}
+
+@utility v-on-dark {
+  --focus-ring: var(--color-paper);
+}
+
 @layer base {
   html {
-    @apply bg-paper text-body font-sans;
+    @apply bg-paper font-sans;
     color-scheme: light;
+  }
+
+  body {
+    @apply text-body relative;
   }
 
   button:not(:disabled) {

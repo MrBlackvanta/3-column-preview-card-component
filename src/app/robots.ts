@@ -1,4 +1,4 @@
-import { SITE_URL } from "@/app/site";
+import { SITE_URL } from "@/data";
 import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";

@@ -1,4 +1,4 @@
-import { SITE_URL } from "@/app/site";
+import { SITE_URL } from "@/data";
 import type { Metadata, Viewport } from "next";
 import { Lexend_Deca } from "next/font/google";
 import localFont from "next/font/local";
