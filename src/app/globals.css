@@ -5,11 +5,22 @@
   --font-sans: var(--font-lexend-deca), ui-sans-serif, system-ui, sans-serif;
   --font-display:
     var(--font-big-shoulders-display), ui-sans-serif, system-ui, sans-serif;
+
+  --text-body: 0.9375rem;
+  --text-body--line-height: 1.6667;
+  --text-display: 2.5rem;
+  --text-display--line-height: 1.2;
+
+  --color-paper: #f2f2f2;
+  --color-muted: #3d6e6d;
+  --color-sedans: #b65104;
+  --color-suvs: #006971;
+  --color-luxury: #004140;
 }
 
 @layer base {
   html {
-    @apply font-sans;
+    @apply bg-paper text-body font-sans;
     color-scheme: light;
   }
 
