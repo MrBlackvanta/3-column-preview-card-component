@@ -33,7 +33,7 @@ const shareImage = {
   url: "/opengraph-image.jpg",
   width: 1200,
   height: 630,
-  alt: "The Milepost name on the brand's orange, above a line about renting a sedan, an SUV or a luxury car.",
+  alt: "The Milepost name above the heading Choose your rental class, on the brand's dark cyan, beside the page's three columns for sedans, SUVs and luxury rentals.",
 };
 
 export const metadata: Metadata = {
